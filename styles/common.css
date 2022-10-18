@@ -10,6 +10,9 @@ header {
     background-color: white;
     display: flex;
 }   
+header a {
+    text-decoration: none;
+}
 .logo {
     width: 75px;
 }
