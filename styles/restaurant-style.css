@@ -1,0 +1,64 @@
+.main{
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    bottom: 1%;
+}
+h1{
+    font-size: 50px;;
+}
+.header{
+    height: 500px;
+}
+main{
+    position: relative;
+    background-color: white;
+    top: -5%;
+    padding: 100px;
+    gap: 15px;
+}
+
+.nav{
+    position:sticky;
+    width: 35%;
+}
+.main-content {
+    width: 75%;
+}
+.menu{
+    width:90%;
+    padding:10px;
+    border-top: 1px solid grey;
+}
+.article {
+    width: 50%;
+    gap: 50px;
+}
+.info {
+    width: 30%;
+}
+.menu:hover{
+    border: 1px solid grey;
+}
+
+.inside{
+    text-decoration: none;
+    color:black;
+}
+.order{
+    margin:20px;      
+    text-decoration: none;
+    color:rgb(61, 61, 61);
+
+}
+
+.order:hover{
+    text-decoration: underline;
+}
+
+.insideimg{
+    float:right;
+    width:250px;
+}
