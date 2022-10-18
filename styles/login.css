@@ -1,0 +1,116 @@
+body{
+    background-color: #009ee1;
+    text-align:center;
+}
+
+.label{
+    margin:120px;
+
+}
+
+.main{
+    background-color: white;
+    padding: 5px;
+    margin-left:500px;
+    width:500px;
+    height:800px;
+    border-radius:20px;
+    margin-bottom: 50px;
+}
+
+.google{
+    background-color: white;
+    border-radius:10px;
+    margin-top:40px;
+    margin-right:23px;
+    margin-left:21px;
+    padding-top:15px;
+    padding-bottom:10px;
+    text-emphasis-color: black;
+    border-color: #ededed;
+}
+
+.google:hover{
+    background-color: #d9e0e6;
+}
+
+.apple{
+    background-color: black;
+    border-radius:10px;
+    margin:20px;
+    padding-top:17px;
+    padding-bottom:15px;
+    color: black;
+}
+
+.apple:hover{
+
+    background-color:rgb(26, 26, 26);
+}
+.google:hover{
+    background-color: #d9e0e6;
+}
+
+.facebook{
+    background-color: #3676eb;
+    border-radius:10px;
+    margin:20px;
+    padding-top:17px;
+    padding-bottom:12px;
+    color: black;
+    border-color:#3676eb;
+}
+
+.facebook:hover{
+    background-color:#4981ea;
+}
+
+.icon{
+    float:left;
+    width:25px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.or{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.mail{
+    border-radius:10px;
+    width:415px;
+    margin:20px;
+    padding:17px;
+    border-color: #ededed;
+}
+
+.mail:hover{
+    border-color:#3676eb;
+}
+
+.button{
+    border-radius:10px;
+    width:440px;
+    padding:17px;
+    background-color: #009ee1;
+    border-color: #009ee1;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color:#72c5e9;
+}
+
+.privacy{
+    text-align: left;
+    font-size:13px;
+    margin-top:25px;
+    margin-left:25px;
+    margin-right:20px;
+}

@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+header { 
+    padding: 10px;
+    justify-content: space-around;
+    background-color: white;
+    display: flex;
+}   
+.logo {
+    width: 75px;
+}
+.btn-container {
+    gap: 10px;
+}
+.btn {
+    height: 100%;
+    padding: 0px 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-login {
+    background: none;
+}
+.btn-login a {
+    font-size: 14px;
+}
+.btn-colored {
+    background-color: #499FDF;
+    border-radius: 10px;
+}
+.btn-colored a {
+    font-size: 16px;
+    color: white;
+}
+.flex-col .logo {
+    margin-bottom: 25px;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify {
+    justify-content: center;
+}
+.align {
+    align-items: center;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 100px 50px 75px 75px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.app_link {
+    width: 150px;
+    margin: 7px;
+}
+#footer-nav {
+    gap: 50px;
+    margin-left: 150px;
+}
+#footer-nav .flex-col {
+    max-width: 200px;
+    line-height: 30px;
+}
