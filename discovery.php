@@ -9,7 +9,7 @@
     <title>Discover Restaurants, Supermarkets & Shops on Wolt – Wolt</title>
 </head>
 <body>
-    <?php  include "views/header.php"; ?>
+    <?php include "views/header.php"; ?>
     <main class="content-list align">
         <?php include "views/nav.php"; ?>
         <div class="slider">
