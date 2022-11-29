@@ -9,16 +9,7 @@
     <title>Discover Restaurants, Supermarkets & Shops on Wolt – Wolt</title>
 </head>
 <body>
-    <header class="flex-row">
-        <a href="main-landing.html">
-            <img class="logo" src="images/wolt-logo.png" >
-        </a>
-        <div class="btn-container flex-row">
-            <button class="btn btn-login"><a href="login.html">Войти</a></button>
-            <button class="btn btn-colored"><a href="login.html">Зарегистрироваться</a></button>
-        </div>
-    </header>
-    
+    <?php  include "views/header.php"; ?>
     <main class="content-list align">
         <nav class="flex-row justify">
             <a href="discovery.html" class="flex-row active align">

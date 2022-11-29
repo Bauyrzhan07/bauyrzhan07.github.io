@@ -9,15 +9,7 @@
     <title>Wolt: Доставка еды и товаров - Казахстан</title>
 </head>
 <body>
-    <header class="flex-row">
-        <a href="discovery.html">
-            <img class="logo" src="images/wolt-logo.png" alt="wolt-logo">
-        </a>
-        <div class="btn-container flex-row">
-            <button class="btn btn-login"><a href="login.html">Войти</a></button>
-            <button class="btn btn-colored"><a href="login.html">Зарегистрироваться</a></button>
-        </div>
-    </header>
+    <?php  include "views/header.php"; ?>
     <main>
         <div class="poster flex-row align">
             <div class="poster-content flex-col">

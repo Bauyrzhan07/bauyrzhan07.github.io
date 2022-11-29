@@ -9,16 +9,7 @@
     <title>McDonald's на Шевченко</title>
 </head>
 <body>
-
-    <header class="flex-row">
-        <a href="discovery.html">
-            <img class="logo" src="images/wolt-logo.png" >
-        </a>
-        <div class="btn-container flex-row">
-            <button class="btn btn-login"><a href="login.html">Войти</a></button>
-            <button class="btn btn-colored"><a href="login.html">Зарегистрироваться</a></button>
-        </div>
-    </header>
+    <?php  include "views/header.php"; ?>
     <div class="header">
         <img class="main" src="https://imageproxy.wolt.com/venue/5d7bcb952aed085d3eda6451/e32128f6-3155-11ea-97fc-0a58646fa85d_4-3-mccomboXXL_BigTasty.jpg?w=1920">
     </div>

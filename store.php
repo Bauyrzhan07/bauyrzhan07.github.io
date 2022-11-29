@@ -9,20 +9,7 @@
     <title>Гастромаркет Colibri</title>
 </head>
 <body>
-
-    <header class="flex-row">
-        <a href="discovery.html">
-            <img class="logo" src="images/wolt-logo.png" >
-        </a>
-        <div class="btn-container flex-row">
-            <button class="btn btn-login"><a style="color: white" href="login.html">Войти</a></button>
-            <button class="btn btn-colored"><a href="login.html">Зарегистрироваться</a></button>
-        </div>
-    </header>
-    <div class="header">
-        <img class="main" src="https://imageproxy.wolt.com/venue/5de4d035bf0be245c653237f/5a6cfde4-e0a5-11ec-9b73-b6e8f1cc1c5e_shutterstock_1472450045.jpg?w=1920">
-    </div>
-
+    <?php  include "views/header.php"; ?>
     <main class="flex-col align">
         <div class="main-content flex-row justify">
             <div class="nav">

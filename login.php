@@ -9,6 +9,7 @@
     <title>Вход</title>
 </head>
 <body>
+    <?php  include "views/header.php"; ?>
     <main class="flex-col align">
         <img class="label" src="images/name.png">
 
