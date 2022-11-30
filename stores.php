@@ -12,8 +12,8 @@
     <?php  include "views/header.php"; ?>
     <main class="content-list align">
         <?php include "views/nav.php"; ?>
-        <?php include "api/get_store_categories.php"; ?>
-        <h1>Магазины поблизости</h1>
+        <?php include "api/stores/get_store_categories.php"; ?>
+        <h1>Магазины</h1>
         <!-- <div class="slider">
             <div class="slider-head flex-row align">
                 <h2>Категории</h2>
@@ -75,18 +75,19 @@
         <div class="slider">
             <div class="slider-head flex-row align">
                 <h2>Категории</h2>
+
                 <div class="slider-right">
-                    <button class="next-prev-btn">
+                    <button class="next-prev-btn" onclick="plusSlides(-2)">
                         <svg viewBox="0 0 24 24"><path d="M22.533 10.526H5.422a.251.251 0 01-.165-.438l4.637-3.6a1.44 1.44 0 00-1.9-2.162L.813 10.165a2.4 2.4 0 000 3.6l7.179 5.837a1.44 1.44 0 001.9-2.161l-4.637-3.6a.251.251 0 01.165-.438h17.113a1.44 1.44 0 000-2.88v.003z"></path></svg>
                     </button>
-                    <button class="next-prev-btn">
+                    <button class="next-prev-btn" onclick="plusSlides(2)">
                         <svg viewBox="0 0 24 24"><path d="M1.40206 10.5258H18.5131C18.6167 10.5248 18.709 10.4602 18.7455 10.3633C18.7821 10.2663 18.7553 10.1569 18.6781 10.0878L14.0411 6.48776C13.4767 5.95564 13.4352 5.0721 13.9472 4.48944C14.4593 3.90679 15.3408 3.83442 15.9411 4.32576L23.1221 10.1648C23.6387 10.6204 23.9346 11.276 23.9346 11.9648C23.9346 12.6536 23.6387 13.3092 23.1221 13.7648L15.9431 19.6018C15.3426 20.0868 14.4665 20.0121 13.9568 19.4324C13.4471 18.8527 13.4852 17.9742 14.0431 17.4408L18.6801 13.8408C18.7572 13.7717 18.7841 13.6622 18.7475 13.5653C18.711 13.4683 18.6187 13.4038 18.5151 13.4028H1.40206C0.621817 13.3822 0 12.7438 0 11.9633C0 11.1828 0.621817 10.5443 1.40206 10.5238V10.5258Z"></path></svg>
                     </button>
                 </div>
             </div>
             <div class="flex-row">
                 <?php foreach($categories as $category): ?>
-                    <a href="#" class="category-card scalable">
+                    <a href="stores.php?category_id=<?=$category['id']?>" class="mySlides category-card scalable">
                         <img src="<?=$category['img_url']?>" >
                         <div class="category-card-bottom">
                             <p><?=$category['name']?></p>
@@ -96,12 +97,18 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <?php include "api/get_stores.php"; ?>
+        <?php include "api/stores/get_stores.php"; ?>
+        <h2>Все магазины</h2>
         <div class="flex-row flex-wrap">
             <?php foreach($stores as $store): ?>
-                <a href="#" class="slider-item scalable">
-                    <div class="card-category">
-                        <p>Общие товары</p>
+                <a href="restaurant.php?id=<?=$store['id']?>" class="slider-item scalable">
+                    <?php include "api/stores/get_one_store_category.php" ?>
+                    <div class="flex-row flex-wrap" style="position: absolute; z-index: 2; gap: 1px;">
+                        <?php foreach($store_categories as $store_category): ?>
+                            <div class="card-category">
+                                <p><?=$store_category['name']?></p>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                     <img src="<?=$store['img_url']?>">
                     <div class="inner-item flex-row align">
@@ -281,6 +288,7 @@
             </a> -->
         </div>
     </main>
+    <script src="script.js"></script>
     <?php include "views/footer.php"; ?>
 </body>
 </html>

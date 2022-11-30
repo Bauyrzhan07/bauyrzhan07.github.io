@@ -1,4 +1,4 @@
-<?php include "api/get_restaurant.php"; ?>
+<?php include "api/restaurants/get_restaurant.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,11 +29,13 @@
                     <?php include "api/get_products.php"; ?>
                     <?php foreach($products as $product): ?>
                         <a class="inside" href="#">
-                            <div class="menu">
+                            <div class="flex-row menu align" style="justify-content:space-between">
+                                <div class="flex-col">
+                                    <h3><?=$product['name']?></h3>
+                                    <p><?=$product['description']?></p>
+                                    <h4><?=$product['price']?></h4>    
+                                </div>
                                 <img class="insideimg" src="<?=$product['img_url']?>">
-                                <h3><?=$product['name']?></h3>
-                                <p><?=$product['description']?></p>
-                                <h4><?=$product['price']?></h4>
                             </div>
                         </a>
                     <?php endforeach;?>

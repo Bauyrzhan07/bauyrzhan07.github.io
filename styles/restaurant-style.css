@@ -29,6 +29,7 @@ main{
 }
 .menu{
     width:90%;
+    min-height: 100px;
     padding:10px;
     border-top: 1px solid grey;
 }
@@ -59,6 +60,5 @@ main{
 }
 
 .insideimg{
-    float:right;
-    width:250px;
+    max-height: 150px;
 }
