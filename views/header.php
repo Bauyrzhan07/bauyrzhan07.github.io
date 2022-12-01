@@ -16,6 +16,13 @@
                 <button class='btn btn-colored'><a href='registration.php'>Зарегистрироваться</a></button>
                 </div>  
             ";
+        } else {
+            echo "
+                <div class='btn-container flex-row'>
+                    <button class='btn btn-colored'><a href='order_history.php'>История заказов</a></button>
+                    <button class='btn btn-colored'><a href='cart.php'>Корзина</a></button>
+                </div>
+            ";
         }
     ?>
 </header>

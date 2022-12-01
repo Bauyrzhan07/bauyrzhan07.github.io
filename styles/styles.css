@@ -309,3 +309,28 @@ h1 {
     transform: translateY(-50%);
     fill: currentcolor;
 }
+.cart {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+}
+.cart-item {
+    padding: 20px 30px;
+    min-height: 100px;
+}
+.insideimg{
+    max-height: 150px;
+}
+.menu{
+    width:90%;
+    min-height: 100px;
+    padding:10px;
+    border-top: 1px solid grey;
+}
+.article {
+    width: 50%;
+    gap: 50px;
+}

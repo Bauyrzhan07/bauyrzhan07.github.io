@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Вход</title>
+    <title>Регистрация</title>
 </head>
 <body>
     <?php  include "views/header.php"; ?>

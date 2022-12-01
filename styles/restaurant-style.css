@@ -27,16 +27,6 @@ main{
 .main-content {
     width: 75%;
 }
-.menu{
-    width:90%;
-    min-height: 100px;
-    padding:10px;
-    border-top: 1px solid grey;
-}
-.article {
-    width: 50%;
-    gap: 50px;
-}
 .info {
     width: 30%;
 }
@@ -57,8 +47,4 @@ main{
 
 .order:hover{
     text-decoration: underline;
-}
-
-.insideimg{
-    max-height: 150px;
 }

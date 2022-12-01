@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/restaurant-style.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title><?=$restaurant['name']?></title>
 </head>
 <body>
@@ -23,12 +24,12 @@
                 <?php endforeach;?>
             </div>
 
-            <div class="article">
+            <div class="article" style="width: 50%;">
                 <?php foreach($sub_categories as $category): ?>
                     <h2 id="<?=$category['name']?>"><?=$category['name']?></h2>
                     <?php include "api/get_products.php"; ?>
                     <?php foreach($products as $product): ?>
-                        <a class="inside" href="#">
+                        <a class="inside" href="services/add_to_cart.php?id=<?=$product['id']?>">
                             <div class="flex-row menu align" style="justify-content:space-between">
                                 <div class="flex-col">
                                     <h3><?=$product['name']?></h3>
@@ -55,5 +56,6 @@
        </div>
     </main>
     <?php include "views/footer.php"; ?>
+    <script src="script.js"></script>
 </body>
 </html>
