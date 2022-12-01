@@ -21,6 +21,7 @@
                 <div class='btn-container flex-row'>
                     <button class='btn btn-colored'><a href='order_history.php'>История заказов</a></button>
                     <button class='btn btn-colored'><a href='cart.php'>Корзина</a></button>
+                    <button class='btn btn-colored'><a href='api/auth/logout.php'>Выйти</a></button>
                 </div>
             ";
         }
