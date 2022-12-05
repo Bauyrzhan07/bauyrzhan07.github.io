@@ -334,3 +334,94 @@ h1 {
     width: 50%;
     gap: 50px;
 }
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    position: absolute;
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 30%;
+    margin-top: 150px;
+    z-index:1;
+}
+.totalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 30px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.overlayAll{
+    display: none;
+    position:absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 2000px;
+    right:0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(6, 6, 6, 0.3);
+}
+#formOrder{
+    display:none;
+    margin: 5% 25%;
+    width: 50%;
+    height: 100%;
+    position:absolute;
+    z-index:3;
+    border: 3px solid black;
+    padding: 25px;
+    background-color: white;   
+}
+.orderItems{
+    margin:40px;
+}
+.removeButton{
+    margin-left: -150px;
+}
+.dec,
+.inc{
+    margin: 5px;
+    font-size: 23px;
+}
+.quantity span{
+    font-size: 18px;
+    margin: 7px;
+}
+.changeAmount{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey; 
+}
+.nameInside{
+    margin-left:-40px;
+}
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.quantity{
+    width: 45%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    margin-right: -40%;
+}

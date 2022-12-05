@@ -16,6 +16,7 @@ header a {
     width: 75px;
 }
 .btn-container {
+    height: 50px;
     gap: 10px;
 }
 .btn {

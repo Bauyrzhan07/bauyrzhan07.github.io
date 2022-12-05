@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+header{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:150px;
+    position: relative;
+
+}
+
+.overlay{
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right:0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10, 10, 10, 0.3);
+
+}
+
+#overlayAll{
+    display: none;
+    position:absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 2000px;
+    right:0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(6, 6, 6, 0.3);
+
+}
+
+nav{
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span{
+    padding-left: 5px;
+}
+
+li a{
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+}
+
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.cart a{
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container,
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.menu{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-cart{
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu:hover .add-cart{
+    bottom:50px;
+    opacity:1;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.products-container{
+    position: absolute;
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 30%;
+    margin-top: 150px;
+    z-index:1;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0;
+}
+
+.product-title{
+    width: 45%;
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+.DeleteButton{
+    padding: 15px 25px 15px 25px;
+    margin: 40px;
+    background-color: #3676eb;
+}
+
+.BuyNowButton{
+    padding: 15px 25px 15px 25px;
+    margin: 40px;
+    border: 2px solid black;
+    background-color: #3676eb;
+    display:flex;
+    flex-wrap: nowrap;
+    color: black;
+    text-decoration: none;
+}
+
+.BuyNowButton:hover{
+    background-color: #6796ed;
+}
+
+.DeleteButton:hover{
+    background-color: #6796ed;
+}
+
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.quantity{
+    width: 45%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    margin-right: -40%;
+}
+
+.total{
+
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey; 
+}
+
+.nameInside{
+    margin-left:-40px;
+}
+
+.remove{
+    width:40px;
+    padding: 10px;
+    background-color: white;
+}
+
+.remove:hover{
+
+    background-color: lightgrey;
+}
+
+.removeButton{
+    margin-left: -150px;
+}
+
+.dec,
+.inc{
+    margin: 5px;
+    font-size: 23px;
+}
+
+.quantity span{
+    font-size: 18px;
+    margin: 7px;
+}
+
+.totalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 30px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.changeAmount{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+
+#formOrder{
+    display:none;
+    margin: 5% 25%;
+    width: 50%;
+    height: 100%;
+    position:absolute;
+    z-index:3;
+    border: 3px solid black;
+    padding: 25px;
+    background-color: white;
+    
+}
+
+.orderItems{
+    margin:40px;
+}
+
+.paymentButton{
+    border: 2px solid black;
+    background-color: #3676eb;
+    padding: 5px;
+    width: 20px;
+    height: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.payment{
+    padding:30px;
+
+}
+
+.paymentForm{
+    display: block;
+    padding: 70px 0;
+}
+
+.paymentForm h3{
+    margin: 30px 0;
+}
+
+.paymentText{
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.selectText{
+    margin: 0 30px;
+}
+
+.selected{
+    margin: 40px 5px;
+}
+
+.selected div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+}
+
+.selected img{
+    width: 200px;
+    margin-top: -40px;
+    
+}
+
+.AmountPay{
+    border: 2px solid lightgrey;
+    padding: 10px;
+    height: 40px;
+}
+
+.placeholder{
+    display: block;
+    margin: 15px 0;
+    width: 500px;
+    height: 70px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+
+.placeholder:hover{
+    box-shadow: 1px 1px 3px #888888;
+}

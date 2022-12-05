@@ -12,7 +12,7 @@
     <?php if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] == NULL) {
             echo "
                 <div class='btn-container flex-row'>
-                <button class='btn btn-login'><a href='login.php'>${_SESSION['user_id']}Войти</a></button>
+                <button class='btn btn-login'><a href='login.php'>Войти</a></button>
                 <button class='btn btn-colored'><a href='registration.php'>Зарегистрироваться</a></button>
                 </div>  
             ";

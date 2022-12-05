@@ -29,7 +29,7 @@
                     <h2 id="<?=$category['name']?>"><?=$category['name']?></h2>
                     <?php include "api/get_products.php"; ?>
                     <?php foreach($products as $product): ?>
-                        <a class="inside" href="services/add_to_cart.php?id=<?=$product['id']?>">
+                        <a class="inside" onclick='setItems(<?php echo json_encode($product); ?>)'>
                             <div class="flex-row menu align" style="justify-content:space-between">
                                 <div class="flex-col">
                                     <h3><?=$product['name']?></h3>
@@ -40,6 +40,7 @@
                             </div>
                         </a>
                     <?php endforeach;?>
+
                 <?php endforeach;?>
             </div>
 
@@ -57,5 +58,6 @@
     </main>
     <?php include "views/footer.php"; ?>
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
