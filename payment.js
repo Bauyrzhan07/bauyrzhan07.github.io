@@ -10,8 +10,13 @@ Object.values(cartItems).map(item => {
         <div class="orderView">
             <div class="AmountPay">${item.inCart}</div>
             <div class="orderName">${item.name}</div>
-            <div class="totalCost">${item.inCart*item.price}</div>
-            <div class="orderImg"><img src="${item.img}"></div>
+            <div class="totalCost">${item.inCart*item.price}KZT</div>
+            <div class="orderImg"><img src="${item.img_url}"></div>
         </div>
     `
 });
+
+let products_tag = document.getElementById("products");
+let amount_tag = document.getElementById("amount");
+products_tag.value = JSON.stringify(cartItems);
+amount_tag.value = localStorage.getItem("totalCost");

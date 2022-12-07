@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/common.css">
-    <title>Shopping Cart</title>
+    <title>Корзина покупок</title>
 </head>
 <body>
     <?php  include "views/header.php"; ?>
@@ -19,7 +19,6 @@
             <p>Общая цена: 0 KZT</p>
         </div>
     </div>
-    <div class="overlayAll"></div>
     <div id="formOrder">
         <h1 class="orderText">Ваш заказ</h1>
         <div class="orderItems">

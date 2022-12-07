@@ -109,17 +109,15 @@ function displayCart(){
         });
         
         let totalAmount = localStorage.getItem("totalCost");
-        console.log(totalAmount);
         productContainer.innerHTML += `
         <div class="totalContainer">
             Общая цена: ${totalAmount} KZT
         </div>
         <div class="btn-container">
-            <button class="btn btn-colored" onclick="deleteAll()"><a>Delete All</a></button>
-            <button class="btn btn-colored" onclick="openOrder()"><a>Buy Now</a></button>
+            <button class="btn btn-colored" onclick="deleteAll()"><a>Удалить все</a></button>
+            <button class="btn btn-colored" onclick="displayOrder(0)"><a>Купить</a></button>
         </div>
         `
-
     }
 
     
@@ -127,8 +125,8 @@ function displayCart(){
 
 function displayOrder(){
     document.getElementById("formOrder").style.display = "block";
-    document.getElementById("overlayAll").style.display = "block";
-    
+    document.querySelector(".products-container").style.display = "none";
+
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
 
@@ -142,21 +140,23 @@ function displayOrder(){
                 <div class="Amount">${item.inCart}</div>
                 <div class="orderName">${item.name}</div>
                 <div class="totalCost">${item.inCart*item.price}</div>
-                <div class="orderImg"><img src="${item.img}"></div>
+                <div class="orderImg"><img width="500px" src="${item.img_url}"></div>
             </div>
         `
     });
 
     order.innerHTML += `
-        <a class="paymentButton" href="payment.html">Go to pay</a> 
+    <div class="btn-container">
+        <button class="btn btn-colored"><a href="payment.php">Перейти к оплате</a></button> 
+    </div>
     `
     
 }
 
-function openOrder(){
-    displayOrder();
+function displayRate() {
+    localStorage.clear();
+    document.getElementById("formRate").style.display = "block";
 }
-
 function decreaseItem(id){
     
     let cartItems = localStorage.getItem("productsInCart");
@@ -198,5 +198,10 @@ function increaseItem(id){
     localStorage.setItem("productsInCart", cartItems);
 
     displayCart();
+}
+
+function closeOrder() {
+    document.getElementById("formRate").style.display = "none";
+    window.location.replace('index.php');
 }
 displayCart();

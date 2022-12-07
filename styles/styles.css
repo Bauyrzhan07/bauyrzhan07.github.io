@@ -355,30 +355,6 @@ h1 {
     font-size: 25px;
     font-weight: bold;
 }
-.overlayAll{
-    display: none;
-    position:absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    height: 2000px;
-    right:0;
-    bottom: 0;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: rgba(6, 6, 6, 0.3);
-}
-#formOrder{
-    display:none;
-    margin: 5% 25%;
-    width: 50%;
-    height: 100%;
-    position:absolute;
-    z-index:3;
-    border: 3px solid black;
-    padding: 25px;
-    background-color: white;   
-}
 .orderItems{
     margin:40px;
 }
@@ -424,4 +400,93 @@ h1 {
     display: flex;
     align-items: center;
     margin-right: -40%;
+}
+.closeOrder{
+    float:right;
+    margin-top:-45px;
+    font-size: 20px;
+    padding:12px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 200px;
+
+}
+.closeOrder:hover{
+    background-color: lightgrey;
+}
+.rate ion-icon{
+    font-size:30px;
+    margin: 10px 20px;
+}
+.endCost{
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+    position:sticky;
+    top: 80px;
+    width: 32%;
+    float:right;
+    margin: 5% 5%;
+    box-shadow: 1px 1px 10px lightgrey;
+    display: block;
+    padding: 35px;
+    white-space: pre-line;   
+}
+
+#formOrder, #formRate{
+    display:none;
+    margin: 5% 25%;
+    width: 50%;
+    z-index:3;
+    border: 3px solid black;
+    padding: 25px;
+    background-color: white;   
+    position:absolute;
+}
+.payment{
+    padding:30px;
+}
+
+.paymentForm{
+    padding: 70px 0;
+    width: fit-content;
+}
+
+.paymentForm h3{
+    margin: 30px 0;
+}
+
+.paymentText{
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.selectText{
+    margin: 0 30px;
+}
+
+.selected{
+    margin: 40px 5px;
+}
+
+.selected div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+
+}
+
+.selected img{
+    width: 200px;
+    margin-top: -40px;
+    
+}
+.placeholder{
+    display: block;
+    padding: 25px;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+.placeholder:hover{
+    box-shadow: 1px 1px 3px #888888;
 }
