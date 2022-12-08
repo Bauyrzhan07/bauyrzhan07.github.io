@@ -14,7 +14,7 @@
     <main class="flex-col align">
         <img class="label" src="images/name.png">
 
-        <form action="api/auth/register.php" class="main" method="POST">
+        <form action="api/auth/register.php" class="main flex-col align" method="POST">
 
             <p style="margin-left:25px;">Войдите или создайте новый аккаунт Wolt</p>
             <?php 
@@ -29,7 +29,10 @@
             <input class="mail" type="text" placeholder="Ваш номер телефона" name="phone">        
             <input class="mail" type="password" placeholder="Введите пароль" name="password">     
             <input class="mail" type="password" placeholder="Повторите пароль" name="password_confirm">        
-            
+            <div class="flex-row align justify">
+                <p>Зарегистрироваться как курьер?</p>
+                <input id="is_courier" class="mail" type="checkbox" name="is_courier">
+            </div>
             <input class="button" type="submit" value="Далее">
         
             <p class="privacy">Пожалуйста, перейдите на страницу<a class="privacy" href="https://explore.wolt.com/ru/kaz/privacy?_gl=1*v7a1za*_ga*NTQ4NDUzNTMxLjE2NjU4MTMwMTA.*_ga_CP7Z2F7NFM*MTY2NTk4NjkzMi40LjEuMTY2NTk4NjkzMi42MC4wLjA.">Заявление Wolt о конфиденциальности</a>, чтобы узнать об обработке персональных данных в Wolt. Вы сможете ознакомиться с локальным Заявлением о конфиденциальности, связанным с вашим аккаунтом в Wolt, на следующем этапе регистрации – после указания вами страны и языковых предпочтений. Данный сайт защищён hCaptcha. На сайте работают <a class="privacy" href="https://www.hcaptcha.com/privacy">Политика Конфиденциальности</a> и <a class="privacy" href="https://www.hcaptcha.com/terms">Условия Пользования</a> hCaptcha.</p>

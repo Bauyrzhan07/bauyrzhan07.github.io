@@ -50,9 +50,9 @@
             <input class="placeholder" placeholder="Введите срок истечения карты" type="date" name="expiration_date"></input>
             <input class="placeholder" placeholder="Введите CCV код" name="ccv"></input>
             <div class="flex-row">
-                <input type="radio" id="visa" name="card_type">
+                <input type="radio" id="visa" name="card_type" value="Visa">
                 <label for="#visa">Visa</label>
-                <input type="radio" id="master_card" name="card_type">
+                <input type="radio" id="master_card" name="card_type" value="MasterCard">
                 <label for="#master_card">MasterCard</label>
             </div>
             <input id="products" type="hidden" name="products" value="">
